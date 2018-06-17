@@ -1,0 +1,169 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">         
+        <title>Carrera Premium</title>         
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">         
+        <meta name="apple-mobile-web-app-capable" content="yes">         
+        <link href="css/bootstrap.min.css" rel="stylesheet">         
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet">         
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">         
+        <link href="css/font-awesome.css" rel="stylesheet">         
+        <link href="css/style.css" rel="stylesheet">         
+        <link href="css/pages/dashboard.css" rel="stylesheet">         
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->         
+        <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->          
+    </head>     
+    <body> 
+        <div class="navbar navbar-fixed-top"> 
+            <div class="navbar-inner"> 
+                <div class="container"> 
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+                    <a class="brand" href="table.html"> 
+				<img src="img/logo.png" width="200" height="100"></a>
+                    <div class="nav-collapse"> 
+                        <ul class="nav pull-right"> 
+                            <li> 
+</li>                             
+                            <li> 
+                                <a href="table.html"> <i class="icon-chevron-left"></i>&nbsp; Retroceder</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <!--/.nav-collapse -->                     
+                </div>                 
+                <!-- /container -->                 
+            </div>             
+            <!-- /navbar-inner -->             
+        </div>         
+        <!-- /navbar -->         
+        <div class="account-container"> 
+            <!-- /content -->             
+            <h1>Crear Carrera</h1> 
+        </div>         
+        <!-- /account-container -->         
+        <div class="login-extra"> 
+</div>         
+        <!--- Buton Action---->         
+        <div class=" container show">
+            <div class=" control-group">
+                <form action="crearcarrera.php" class="text-center form-normal pull-left clearfix">
+                    <legend>Ficha:</legend>
+                    Nombre de la carrera:
+
+                    <br>
+                    <input type="text" name="number" value="">
+                    <br>
+                    Fecha de la salida:
+
+                    <br>
+                    <input type="text" name="firstname" value="">
+                    <br>
+                    Km.
+
+                    <br>
+                    <input type="text" name="time" value="">
+                    <br>
+                    Desnivel Positivo:
+
+                    <br>
+                    <input type="text" name="pleace" value="">
+                    <br>
+                    Desnivel Negativo:
+
+                    <br>
+                    <input type="text" name="pleace" value="">
+                    <br>
+                    Provincia:
+
+                    <br>
+                    <input type="text" name="pleace" value="">
+                    <br>
+                    Pais:
+
+                    <br>
+                    <input type="text" name="pleace" value="">
+                    <br>
+                    Web de la Carerra:
+
+                    <br>
+                    <input type="text" name="pleace" value="http://">
+                    <br>
+                    Copiar URL Instagram:
+
+                    <br>
+                    <input type="text" name="pleace" value="http://">
+                    <br>
+                  
+                  
+                    <div class="nivel2">Fecha de apertura de incripcion:
+                        <br>
+                        <input type="text" name="number" value="">
+                        <br>
+                        Hora de apertura de incripcion:
+
+                        <br>
+                        <input type="text" name="firstname" value="">
+                        <br>
+                        Numero maximo de incritos:
+
+                        <br>
+                        <input type="text" name="time" value="">
+                        <br>
+                        Fecha de cierre de incripciones:
+
+                        <br>
+                        <input type="text" name="pleace" value="">
+                        <br>
+                        Fecha de cierre:
+
+                        <br>
+                        <input type="text" name="pleace" value="">
+                        <br>
+                        Hora de cierra 
+
+                        <br>
+                        <input type="text" name="pleace" value="">
+                        <br>
+                        Puntos ITRA:
+
+                        <br>
+                        <input type="text" name="pleace" value="">
+                        <br>
+                    </div>
+                    <!------- subir--------->
+                    <!-- Custom icons for docx, xlsx, pptx, jpg, pdf, zip -->
+                    <input id="input-ficons-1" name="inputficons1[]" multiple type="file" class="file-loading text-justify text-primary bg-danger">
+                    <br>
+                   Instagram:  <input id="input-ficons-1" name="inputficons1[]" multiple type="url" class="file-loading text-justify text-primary bg-danger" checked="checked" title="Url">
+                    <br>
+                    Youtube: <input id="input-ficons-1" name="inputficons1[]" multiple type="url" class="file-loading text-justify text-primary bg-danger" checked="checked" title="Url">
+                    <br> 
+                    <button class="button btn btn-primary btn-large" type="button" onclick="location.href='table.html'">Guardad</button>
+                </form>
+            </div>
+            <!-- /login-extra -->             
+            <script src="js/jquery-1.12.2.min.js"></script>             
+            <script src="js/bootstrap.js"></script>             
+            <script src="js/signin.js"></script>
+            <script>
+$("#input-ficons-1").fileinput({
+    uploadUrl: "/file-upload-batch/2",
+    uploadAsync: true,
+    previewFileIcon: '<i class="fa fa-file"></i>',
+    allowedPreviewTypes: true, // set to empty, null or false to disable preview for all types
+    previewFileIconSettings: {
+        'docx': '<i class="fa fa-file-word-o text-primary"></i>',
+        'xlsx': '<i class="fa fa-file-excel-o text-success"></i>',
+        'pptx': '<i class="fa fa-file-powerpoint-o text-danger"></i>',
+        'jpg': '<i class="fa fa-file-photo-o text-warning"></i>',
+        'pdf': '<i class="fa fa-file-pdf-o text-danger"></i>',
+        'zip': '<i class="fa fa-file-archive-o text-muted"></i>',
+    }
+});
+</script>
+        </div>
+    </body>
+</html>
